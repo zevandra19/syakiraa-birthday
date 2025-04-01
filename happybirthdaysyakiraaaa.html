@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Ulang Tahun!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffd6e0;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .hidden {
+            display: none;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            background: #ff6b81;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="page" id="page1">
+            <h2>HY SAKIII!!</h2>
+            <img src="./foto-cover.jpg" alt="Cover">
+            <p>aku gatau mau kasi kamu apa, jadi aku coba bikinin ini, ini juga di bantu sama raka (chatgpt) hehe...semoga kamu suka<333 maaf aku ambil fotonya dari story km kmren wkwk</p>
+            <button onclick="nextPage(2)">Lanjut</button>
+        </div>
+
+        <div class="page hidden" id="page2">
+            <img src="foto1.jpg" alt="Foto Kenangan">
+            <p>aku bingung banget mau ngapain wkwk soalnya biasanya tunggu mood dulu, klo ini lebih ke ngejar deadline, jadi editannya abstrak gitu hahaha, maaf yaa belum bisa kasi apa apa, intinya aku seneng banget kenal sama kamu, kamu orangnya sabar banget walau kadang emang ga sabaran hehe, aku bangga banget lah intinya punya temen kaya kamu, kamu orangnya effort dan excited banget aku sukaaa banget temenan sama kamu HAHAHA jadi keulang ulang gini ya kata katanya? intinya rate temenan sama kamu 9999999++++/10 WKWKWK</p>
+            <button onclick="nextPage(3)">Lanjut</button>
+        </div>
+
+        <div class="page hidden" id="page3">
+            <img src="foto2.jpg" alt="Foto Kenangan">
+            <p>karna aku bingung jadi aku sempilin ini hehe, lucuu kann, ini biar flashback dikit wkwk, semoga kita bisa meet yaa, aku pengen banget jalan jalan sama kamu, walau kita orangnya sama sama cepet kehabisan energi HAHAHAHAA kocak banget kan ya? tapi gapapa karna kita orangnya asik, kocak dikit tu ga ngaruh WKWKK</p>
+            <button onclick="nextPage(4)">Lanjut</button>
+        </div>
+
+        <div class="page hidden" id="page4">
+            <img src="foto3.jpg" alt="Foto Kenangan">
+            <p>aku suka banget sama editan kamu yang ini. LUCUU BANGETTT HAHAHA. aku gatau kalo sama kamu tu seneng terus wkwk, karna sama kamu apa aja di apresiasi, terharu banget punya temen kaya kamu sakiiii!!! semogaa apa yang kamu doakan selama ini di kabulkan oleh Allah walau itu pelan pelan, yang penting kamu tetep laksanain 5 waktu okeii aku percaya sama kamuu, kamuu cewe hebat yang pernah aku temui seumur hidupku<333 </p>
+            <button onclick="nextPage(5)">Lanjut</button>
+        </div>
+
+        <div class="page hidden" id="page5">
+            <img src="foto4.jpg" alt="Spotify Playlist">
+            <p>playlis buat orang yang sabarnya limit tapi cantiknya unlimited anjayyyy...semoga suka yaaa, aku di bantu raka cariin beberapa lagu yang cocok sama kepribadian kamu wkwk</p>
+            <button onclick="nextPage(6)">Lanjut</button>
+        </div>
+
+        <div class="page hidden" id="page6">
+            <p>terakhir selamat ulang tahun sakiiii, semoga bertambahnya umur mu ini membawa banyak kebaikan,semoga kamu bisa menjadi lebih baik dari tahun sebelumnya, menjadi lebih sabar dalam menghadapi ujian, menjadi makin dewasa saat menghaadapi masalah, kita sama sama belajar dalam menjalani kehidupan, aku harap kamu bisa terus bertahan dalam keadaan apapun, aku tau kamu kuat, aku bangga banget sama kamu, BANGGA BANGETTT BJIRR!!! WKWKWK. apa lagi yaa? aku gatau mau ngomong apa lagi wkwk, maaf ya belum bisa kasi apa apa...aku mau beliin kamu barang tapi aku gatau kamu perlu apa. atau mau aku beliin sesuatu saki? siapatau aku bisa beliin secara online?? intinya kalo mau atau ada apa apa bilang aja yaaa, selama bisa aku lakuin bakal aku lakuin! sekali lagi selamat ulang tahun sakiiiii makasihh udanh mau jadi temenku selama setahun ini, aku gatau lagi mau ngomong apa wkwk soalnya kan kamu tau aku banyak omong kalo ngomel doang wkwk sehatt teruss yaa kamuuu;) oh iya SEMANGATT SKRIPSIANNYAAAAA>< kalo kamu cape kamu ajak aja aku login ml wkwkkw</p>
+            <button onclick="nextPage(1)">Ulang dari Awal</button>
+        </div>
+    </div>
+
+    <script>
+        function nextPage(pageNumber) {
+            document.querySelectorAll('.page').forEach(page => page.classList.add('hidden'));
+            document.getElementById('page' + pageNumber).classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
